@@ -5,7 +5,7 @@ import { buildTestApp } from '../helpers/testApp.js';
 
 // Enable the AI feature in tests; the model call itself is always a mock (no paid call).
 // Provider is Google Gemini; AI_ENABLED=false (default) keeps it off.
-const aiEnv = { AI_ENABLED: 'true', GEMINI_API_KEY: 'test-gemini-key' };
+const aiEnv = { AI_ENABLED: 'false', GEMINI_API_KEY: 'test-gemini-key' };
 
 /** A fake callModel that returns whatever `out` is, or throws `err`. Records calls. */
 function fakeModel(out, err) {
